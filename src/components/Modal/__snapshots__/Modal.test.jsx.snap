@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Modal component > renders modal 1`] = `
+<div>
+  <button
+    class="_modalBtn_f57fcc"
+  >
+    <img
+      alt="shopping cart"
+      class="icons"
+      src="/shopping-bag.png"
+    />
+  </button>
+</div>
+`;
