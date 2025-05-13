@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { render, screen, renderHook, waitFor } from "@testing-library/react";
 import Shop from "./Shop";
-import useData from "./useData";
+import useData from "../../customHooks/useData";
 import { MemoryRouter } from "react-router-dom";
 
 describe("Shop page", () => {
