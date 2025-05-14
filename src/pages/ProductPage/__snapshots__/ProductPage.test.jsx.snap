@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Product Page > renders product page 1`] = `
+<div>
+  <div>
+    <h1>
+      Oh no, this page doesn't exist!
+    </h1>
+    <a
+      data-discover="true"
+      href="/"
+    >
+      You can go back to the home page by clicking here!
+    </a>
+  </div>
+</div>
+`;
