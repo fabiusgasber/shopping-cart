@@ -26,10 +26,6 @@
 }
 
 main {
-  max-width: 1800px;
-}
-
-main {
   padding: 2rem;
 }
 
@@ -142,10 +138,4 @@ dialog button {
   */
   #root, #__next {
     isolation: isolate;
-  }
-
-  @media (min-width: 2000px) {
-    .content-area {
-      align-self: center;
-    }
   }
