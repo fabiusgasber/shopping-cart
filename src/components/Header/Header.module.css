@@ -45,7 +45,7 @@
   height: 2px;
   width: 0%;
   transition: width 0.25s ease-in-out;
-  background-color: currentColor;
+  background-color: var(--secondary-color);
 }
 
 .menuLink a:hover::after {
@@ -65,15 +65,15 @@
 .asideLink {
   display: flex;
   justify-content: center;
-  transition: transform 0.2s ease-in-out;
+  transition: var(--hover-transition);
 }
 
 .asideLink:hover {
-  transform: translateY(-3px);
+  transform: var(--hover-transform-up);
 }
 
 .asideLink:active {
-  transform: translateY(3px);
+  transform: var(--hover-transform-down);
 }
 
 @media (max-width: 960px) {
