@@ -1,6 +1,6 @@
 .figure {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 70px;
     gap: 2rem;
     transition: var(--hover-transition);
 }
@@ -15,7 +15,6 @@
 
 .figure:hover {
     transform: var(--hover-transform-up);
-    box-shadow: 4px 4px 0px var(--secondary-color);
 }
 
 .figure:active {
