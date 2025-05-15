@@ -10,8 +10,10 @@ const MainLayout = () => {
 
     return (
         <>
+        <div className="content-area">
         <Header items={ cartItems } handleChange={ addToBag } deleteItem={ deleteItem } />
             <Outlet context={ addToBag }/>
+        </div>
         <Footer />
         </>
     )
