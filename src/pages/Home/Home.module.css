@@ -1,17 +1,17 @@
 .main {
-    display: flex;
-    padding: 2rem;
-    gap: 3rem;
-    justify-content: center;
+  display: flex;
+  padding: 2rem;
+  gap: 3rem;
+  justify-content: center;
 }
 
 .section {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .section h1 {
@@ -21,23 +21,22 @@
 }
 
 .section p {
-    padding: 5rem;
+  padding: 5rem;
 }
 
 .main img {
-    height: 500px;
-    object-fit: contain;
-    justify-self: center;
+  height: 500px;
+  object-fit: contain;
+  justify-self: center;
 }
 
-
-    .section a {
-        align-self: center;
-    }
+.section a {
+  align-self: center;
+}
 
 @media (max-width: 720px) {
-    .main {
-        flex-direction: column;
-        align-items: center;
-    }
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
 }

@@ -1,46 +1,46 @@
 .figure {
-    display: grid;
-    grid-template-rows: 1fr 70px;
-    gap: 2rem;
-    transition: var(--hover-transition);
+  display: grid;
+  grid-template-rows: 1fr 70px;
+  gap: 2rem;
+  transition: var(--hover-transition);
 }
 
 .image {
-    max-width: 300px;
-    height: 250px;
-    object-fit: contain;
-    padding: 1rem;
-    justify-self: center;
+  max-width: 300px;
+  height: 250px;
+  object-fit: contain;
+  padding: 1rem;
+  justify-self: center;
 }
 
 .figure:hover {
-    transform: var(--hover-transform-up);
+  transform: var(--hover-transform-up);
 }
 
 .figure:active {
-    transform: var(--hover-transform-down);
+  transform: var(--hover-transform-down);
 }
 
 .link {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .figcaption {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem 1rem;
-    border-top: 2px solid var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-top: 2px solid var(--primary-color);
 }
 
 #title {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    max-width: 150px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 150px;
 }
 
 .price {
-    white-space: nowrap;
+  white-space: nowrap;
 }

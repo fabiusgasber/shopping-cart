@@ -1,22 +1,22 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .main h1 {
-    align-self: center;
+  align-self: center;
 }
 
 .productSection {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-auto-rows: 1fr;
-    gap: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 5rem;
 }
 
-@media (max-width:720px) {
-    .main {
-        align-items: center;
-    }
+@media (max-width: 720px) {
+  .main {
+    align-items: center;
+  }
 }
