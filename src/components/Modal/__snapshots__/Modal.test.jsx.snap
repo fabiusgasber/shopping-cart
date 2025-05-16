@@ -3,6 +3,8 @@
 exports[`Modal component > renders modal 1`] = `
 <div>
   <button
+    aria-atomic="true"
+    aria-live="polite"
     class="_modalBtn_f57fcc"
   >
     <img

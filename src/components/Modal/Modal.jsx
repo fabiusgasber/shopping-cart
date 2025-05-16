@@ -21,8 +21,8 @@ const Modal = ({ title = "Product List", initialShow = false, items=[], handleCh
                 <tbody>
              {items && items.map(item => 
                 (
-                    <tr key={item.id}>
-                        <td><img src={item.image} alt="product image"/></td>
+                    <tr key={item.id} tabIndex={1}>
+                        <td><img src={item.image} alt="product"/></td>
                         <td id={styles.title}>{item.title}</td>
                         <td className={styles.price}>{item.price} $</td>
                         <td>
@@ -48,7 +48,7 @@ const Modal = ({ title = "Product List", initialShow = false, items=[], handleCh
             </dialog> 
             </>
 }           
-        <button className={styles.modalBtn} onClick={() => setOpen(true)}>
+        <button className={styles.modalBtn} onClick={() => setOpen(true)} aria-live="polite" aria-atomic>
            <img className="icons" src="/shopping-bag.png" alt="shopping cart"/>
            {items.length > 0 && <p id={styles.cartItemsNumber}>{items.reduce((prev, curr) => prev + curr.quantity, 0)}</p> }
         </button>

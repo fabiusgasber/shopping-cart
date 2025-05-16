@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className={styles.footer}>
             <p>Created by Fabius Gasber</p>
-            <a href="https://github.com/fabiusgasber" target="_blank"><img className={styles.img} src="/github.png"/></a>
+            <a href="https://github.com/fabiusgasber" target="_blank"><img className={styles.img} alt="github profile (opens in new tab)" src="/github.png"/></a>
         </footer>
     );
 }

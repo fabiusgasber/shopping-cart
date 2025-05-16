@@ -23,21 +23,23 @@ const Header = ({ items = [], handleChange, deleteItem }) => {
           </li>
         </ul>
       </nav>
-      <nav className={styles.asideMenu}>
-        <ul className={styles.ul}>
+        <ul className={`${styles.ul} ${styles.asideMenu}`}>
           <li>
             <Modal handleChange={handleChange} deleteItem={deleteItem} items={items} initialShow={false} title="Cart" />
           </li>
           <li>
-            <Link to="#" className={styles.asideLink}>
-              <img className="icons" alt="search (opens homepage)" src="/search.png"/>
+            <button type="button">
+            <Link to="#" className={styles.asideLink} onClick={(e) => e.preventDefault()}>
+              <img className="icons" alt="search" src="/search.png"/>
             </Link>
+            </button>
           </li>
           <li>
-            <Link to="#" className={"primaryBtn" + " " + styles.asideLink}>Log in</Link>
+            <button type="button">
+              <Link to="#" className={"primaryBtn" + " " + styles.asideLink} onClick={(e) => e.preventDefault()}>Log in</Link>
+            </button>
           </li>
         </ul>
-      </nav>
     </header>
   );
 };

@@ -11,11 +11,11 @@ const Shop = () => {
     if(loading) return <h1>...Loading items</h1>
     if(error) return <ErrorPage />
     return (
-        <main className={styles.main}>
+        <main className={styles.main} aria-live="polite">
                 <h1>Our collection</h1>
                 <section className={styles.productSection}>
                 { data.map((item) => (
-                    <ProductCard item={item} to={`/product/${item.id}`} key={item.id} url={item.image} alt={item.title} caption={{ text: item.title, price: item.price }} />
+                    <ProductCard item={item} to={`/product/${item.id}`} key={item.id} url={item.image} alt="" caption={{ text: item.title, price: item.price }} />
                 )) }
                 </section>
         </main>

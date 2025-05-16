@@ -5,8 +5,8 @@ import styles from "./ProductPage.module.css"
 import ErrorPage from "../ErrorPage/ErrorPage";
 
 const ProductPage = ({ propItem }) => {
-
-    const item = propItem ? propItem : useLocation()?.state?.item;
+    const location =  useLocation()?.state?.item;
+    const item = propItem ? propItem : location;
     const addToBag = useOutletContext();
     const [quantity, setQuantity] = useState(1);
     
@@ -14,8 +14,8 @@ const ProductPage = ({ propItem }) => {
 
     return (
         <>
-        <main className={styles.main}>
-        <ProductCard style={styles.figure} url={item.image} alt={item.title} />
+        <main className={styles.main} aria-live="polite">
+        <ProductCard style={styles.figure} url={item.image} alt="product" />
         <section className={styles.section}>
             <article className={styles.productInfo}>
                 <div id={styles.itemHeader}>
