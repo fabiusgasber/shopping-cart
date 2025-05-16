@@ -4,10 +4,6 @@
     column-gap: 5rem;
 }
 
-.figure, .section {
-    max-width: 800px;
-}
-
 .section {
     display: flex;
     flex-direction: column;
