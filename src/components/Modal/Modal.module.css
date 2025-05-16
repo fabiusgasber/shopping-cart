@@ -134,3 +134,13 @@ body:has(dialog[open]) {
   height: 20px;
   text-align: center;
 }
+
+@media (max-width: 720px) {
+  .dialog {
+    width: 100vw;
+    height: 100vh;
+  }
+  .table tr {
+    gap: 1rem;
+  }
+}
