@@ -4,7 +4,7 @@ const useCartItems = () => {
         const [cartItems, setCartItems] = useState([]);
             
         const addToBag = (e, item, quantity) => {
-            if(e instanceof Event) e.preventDefault();
+            if(e) e.preventDefault();
             const duplicate = cartItems.filter((elem) => (elem.id === item.id));
             duplicate.length ?
             setCartItems(cartItems.map((elem) => elem.id === item.id ? { ...item, quantity: quantity } : elem)) 
