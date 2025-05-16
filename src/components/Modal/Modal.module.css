@@ -123,15 +123,14 @@ body:has(dialog[open]) {
 
 #cartItemsNumber {
     position: absolute;
-    top: -5px;
+    top: 0;
     right: -10px;
     color: var(--secondary-color);
     font-weight: bold;
-    background-color: black;
+    background-color: red;
     color: white;
     border-radius: 50%;
-    padding: 0.25rem;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     text-align: center;
 }
