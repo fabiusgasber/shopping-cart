@@ -2,16 +2,25 @@
 
 exports[`Product Page > renders product page 1`] = `
 <div>
-  <div>
+  <main
+    class="_main_6adc08"
+  >
+    <img
+      src="/error.png"
+    />
     <h1>
       Oh no, this page doesn't exist!
     </h1>
-    <a
-      data-discover="true"
-      href="/"
-    >
-      You can go back to the home page by clicking here!
-    </a>
-  </div>
+    <p>
+      You can go back to the home page by clicking 
+      <a
+        data-discover="true"
+        href="/"
+      >
+        here
+      </a>
+      !
+    </p>
+  </main>
 </div>
 `;

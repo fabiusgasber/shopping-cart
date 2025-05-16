@@ -7,7 +7,7 @@ describe("ProductCard component", () => {
 
     const url = "https://placehold.co/600x400"
     const alt = "Placeholder"
-    const placeholder = { text: "This is a placeholder text", price: "19.99$" }
+    const placeholder = { text: "This is a placeholder text", price: "19.99" }
 
     it("renders image with the correct src and alt attributes", () => {
         render(
@@ -30,7 +30,7 @@ describe("ProductCard component", () => {
         )
 
         const placeholderElem = screen.getByText(placeholder.text);
-        const priceElem = screen.getByText(placeholder.price);
+        const priceElem = screen.getByText(`${placeholder.price} $`);
         expect(priceElem).toBeInTheDocument();
         expect(placeholderElem).toBeInTheDocument();
     })
